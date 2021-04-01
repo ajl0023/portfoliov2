@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "mainFont";
+  src: url("../fonts/circular-bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "secondary";
+  src: url("../fonts/VarelaRound-Regular.ttf") format("truetype");
+}
+$background: #2fac66;
+$base: #e6e8e7;
+$screen: #1a1e2c;
+$frame: #3f3f41;
+$open: #bcbdc1;
+$base2: #d1d2d4;
+$baseWidth: 130%;
+@mixin align-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 540px) {
+  $baseWidth: 130%;
+}
+.laptop {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 50.25%;
+  background: $screen;
+  border: 15px solid $frame;
+  border-top: 20px solid $frame;
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 0 0 1px $base2;
+  &:before {
+    content: "";
+    bottom: -35px;
+    background: $base;
+    height: 20px;
+    width: $baseWidth;
+    border-radius: 0 0 10px 10px;
+    @include align-horizontal;
+  }
+  &:after {
+    content: "";
+    top: -12px;
+    width: 3px;
+    height: 3px;
+    background: $base;
+    border-radius: 50%;
+    @include align-horizontal;
+  }
+}
+.base {
+  bottom: -25px;
+  background: $base2;
+  height: 10px;
+  max-width: $baseWidth;
+  @include align-horizontal;
+  &:before {
+    content: "";
+    border-radius: 0 0 10px 10px;
+    height: 10px;
+    max-width: 80px;
+    background: $open;
+    @include align-horizontal;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    max-width: $baseWidth;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 10px 36px -2px rgba(0, 0, 0, 0.4);
+  }
+}
+.container {
+  background: linear-gradient(-13deg, #2c5e92, #552f6d);
+  padding: 20px 30px 20px 30px;
+  overflow-y: auto;
+  min-height: 100vh;
+  .code-editor-container {
+    position: relative;
+    height: 100%;
+    width: 70%;
+    @media (max-width: 920px) {
+    }
+    .laptop-svg {
+      width: 100%;
+      height: 100%;
+    }
+    .code-editor {
+      display: flex;
+      overflow-y: hidden;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      font-family: monaco, Consolas, "Lucida Console", monospace;
+      border-radius: 8px;
+      background-color: #1a1e2c;
+      .line-number-container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        color: #55718d;
+        gap: 3px;
+        .line-container {
+          display: flex;
+          .line-number {
+            margin-right: 10px;
+          }
+          .code-line {
+            display: inline;
+            width: 100%;
+          }
+        }
+      }
+      .client-editor {
+        width: 50%;
+        height: 100%;
+        border-right: 0.5px solid gray;
+      }
+      .server-editor {
+        width: 50%;
+        height: 100%;
+      }
+    }
+  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .main-content {
+    z-index: 3;
+    font-family: "mainFont";
+    display: flex;
+    font-size: 36px;
+    height: auto;
+    gap: 50px;
+    padding: 10px;
+    max-width: 1500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .text-content {
+      color: white;
+      border-radius: 5px;
+      @media (max-width: 920px) {
+        width: 100%;
+      }
+      width: 30%;
+      .line-header {
+        margin-bottom: 25px;
+      }
+      .text-container {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 5px;
+        width: 100%;
+        padding: 30px 13px;
+        position: relative;
+        .main-header {
+          margin-bottom: 15px;
+          background: #1e3264;
+          padding: 5px 80px 5px 13px;
+          margin-left: -30px;
+          font-size: 20px;
+          text-align: left;
+          white-space: nowrap;
+          width: fit-content;
+          line-height: 40px;
+        }
+        .react-header {
+          color: white;
+          z-index: 1;
+          height: fit-content;
+        }
+      }
+      .description {
+        font-family: secondary;
+        font-size: 12px;
+        right: 0;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        line-height: 23px;
+        top: 0;
+        font-weight: 500;
+      }
+    }
+    @media (max-width: 920px) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main-content {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,84 @@
+.container {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 20px;
+}
+
+@media (max-width: 1605px) {
+  .container {
+    right: 20px;
+    top: 20px;
+    bottom: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    left: auto;
+  }
+}
+
+.container .contact-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 1605px) {
+  .container .contact-icon-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.container .contact-icon-container .contact-icon {
+  fill: rgba(255, 255, 255, 0.7);
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
+}
+
+@media (max-width: 1630.98px) {
+  .container .contact-icon-container .contact-icon {
+    fill: white;
+  }
+}
+
+.container .contact-icon-container .contact-icon:hover {
+  fill: white;
+}
+
+.container .divider-line {
+  height: 85%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.28);
+  top: 150px;
+  left: 0;
+  right: 0;
+  display: none;
+  margin: 0 auto;
+  width: 2px;
+}
+/*# sourceMappingURL=navbar.module.css.map */

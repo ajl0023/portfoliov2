@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.language-js {
+  font-size: 0.8vw !important;
+  background-color: transparent !important;
+  word-break: break-word !important;
+}
+
+.code-toolbar {
+  max-width: 100%;
+}
+
+pre {
+  width: 100% !important;
+  text-align: left !important;
+  white-space: pre-wrap !important;
+  padding: 15px 30px 15px 15px;
+}
+
+.app-wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+code {
+  display: block;
+  width: 100% !important;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+#root {
+  position: absolute;
+  height: 100vh;
+}
+
+.toolbar-item {
+  display: none !important;
+}
+
+.tech-icon {
+  fill: rgba(255, 255, 255, 0.7);
+}
+/*# sourceMappingURL=main.css.map */

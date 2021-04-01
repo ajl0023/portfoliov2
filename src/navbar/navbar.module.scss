@@ -1,0 +1,51 @@
+.container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 20px;
+  @media (max-width: 1605px) {
+    right: 20px;
+    top: 20px;
+    bottom: auto;
+    flex-direction: row;
+    left: auto;
+  }
+  .contact-icon-container {
+    @media (max-width: 1605px) {
+      flex-direction: row;
+    }
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: relative;
+    height: fit-content;
+    .contact-icon {
+      fill: rgba(255, 255, 255, 0.7);
+      width: 20px;
+      cursor: pointer;
+      height: 20px;
+      @media (max-width: 1630.98px) {
+        fill: white;
+      }
+      &:hover {
+        fill: white;
+      }
+    }
+  }
+  .divider-line {
+    height: 85%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.28);
+    top: 150px;
+    left: 0;
+    right: 0;
+    display: none;
+    margin: 0 auto;
+    width: 2px;
+  }
+}
