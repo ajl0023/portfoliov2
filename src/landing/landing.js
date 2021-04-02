@@ -11,8 +11,9 @@ import HtmlIcon from "./projectphotos/html5.svg";
 import JsIcon from "./projectphotos/javascript.svg";
 import NodeIcon from "./projectphotos/node.svg";
 import ReactIcon from "./projectphotos/react.svg";
+
 const element = document.createElement("section");
-console.log(HtmlIcon.toString());
+
 element.classList.add(style["wrapper"]);
 const techImages = [
   {
@@ -34,7 +35,8 @@ const techImages = [
   },
 ];
 
-element.innerHTML = /*html*/ `
+export const renderLanding = (fragment) => {
+  element.innerHTML = /*html*/ `
 <div class=${style["center-container"]}>
 
     <div class=${style["container"]}>
@@ -102,12 +104,13 @@ element.innerHTML = /*html*/ `
           </div>
         </div>
     </div>`;
-
-document.body.appendChild(element);
-const techContainer = document.getElementById("tech-container");
-techImages.map((item) => {
-  let icon = document.createElement("div");
-  icon.classList.add(style["icon-container"]);
-  icon.innerHTML = /*html*/ `${item.image} <p class=${style["icon-label"]}>${item.name}</p>`;
-  techContainer.appendChild(icon);
-});
+  const root = fragment.getElementById("#root");
+  root.appendChild(element);
+  const techContainer = fragment.getElementById("tech-container");
+  techImages.map((item) => {
+    let icon = document.createElement("div");
+    icon.classList.add(style["icon-container"]);
+    icon.innerHTML = /*html*/ `${item.image} <p class=${style["icon-label"]}>${item.name}</p>`;
+    techContainer.appendChild(icon);
+  });
+};
