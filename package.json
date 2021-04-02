@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "server": "nodemon ./server/server.js",
-    "start": "webpack serve --open",
+    "start": "nodemon ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
