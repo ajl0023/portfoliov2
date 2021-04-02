@@ -6,51 +6,51 @@ element.classList.add(style["container"]);
 
 const newObserver = () => {};
 
-// window.onload = () => {
-//   let options = {
-//     threshold: [0.2],
-//   };
-//   const laptop = document.getElementById("main-laptop-obs");
-//   const trackSvg = (entries) => {
-//     if (entries[0].isIntersecting) {
-//       var i = 0;
-//       var txt = `const app = express();\napp.get('api/skills', (req,res) =>\n{ res.json(["React","Javascript",\n"nodeJS", "CSS", "HTML"])})`;
-//       const server = document.getElementById("server-text");
-//       const client = document.getElementById("client-text");
-//       var speed = 10;
+window.onload = () => {
+  let options = {
+    threshold: [0.2],
+  };
+  const laptop = document.getElementById("main-laptop-obs");
+  const trackSvg = (entries) => {
+    if (entries[0].isIntersecting) {
+      var i = 0;
+      var txt = `const app = express();\napp.get('api/skills', (req,res) =>\n{ res.json(["React","Javascript",\n"nodeJS", "CSS", "HTML"])})`;
+      const server = document.getElementById("server-text");
+      const client = document.getElementById("client-text");
+      var speed = 10;
 
-//       function serverAnimation() {
-//         if (i < txt.length) {
-//           server.innerHTML += txt.charAt(i);
-//           i++;
-//           const timeout = setTimeout(serverAnimation, speed);
-//           if (i === txt.length) {
-//             clearTimeout(timeout);
-//             i = 0;
-//             clientAnimation();
-//           }
-//         }
-//         Prism.highlightElement(server);
-//       }
-//       function clientAnimation() {
-//         let txt = `const mySkills = await \n axios.get('/api/skills')\n console.log(mySkills.data)`;
+      function serverAnimation() {
+        if (i < txt.length) {
+          server.innerHTML += txt.charAt(i);
+          i++;
+          const timeout = setTimeout(serverAnimation, speed);
+          if (i === txt.length) {
+            clearTimeout(timeout);
+            i = 0;
+            clientAnimation();
+          }
+        }
+        Prism.highlightElement(server);
+      }
+      function clientAnimation() {
+        let txt = `const mySkills = await \n axios.get('/api/skills')\n console.log(mySkills.data)`;
 
-//         if (i < txt.length) {
-//           client.innerHTML += txt.charAt(i);
+        if (i < txt.length) {
+          client.innerHTML += txt.charAt(i);
 
-//           i++;
-//           setTimeout(clientAnimation, speed);
-//         }
-//         Prism.highlightElement(client);
-//       }
-//       observer.disconnect();
-//       serverAnimation();
-//     }
-//   };
-//   let observer = new IntersectionObserver(trackSvg, options);
+          i++;
+          setTimeout(clientAnimation, speed);
+        }
+        Prism.highlightElement(client);
+      }
+      observer.disconnect();
+      serverAnimation();
+    }
+  };
+  let observer = new IntersectionObserver(trackSvg, options);
 
-//   observer.observe(laptop);
-// };
+  observer.observe(laptop);
+};
 export const renderAbout = (fragment) => {
   element.innerHTML = /*html*/ `<div class=${style["container"]}>
       <div class=${style["main-content"]}>

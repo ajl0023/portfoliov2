@@ -1,15 +1,15 @@
-// import "./main.css";
-// import "../cubes/cubes";
-// import "../cubes/cubes.css";
+import "./main.css";
+import "../cubes/cubes";
+import "../cubes/cubes.css";
 import Prism from "prismjs";
-// Prism.highlightAll();
+Prism.highlightAll();
 
 import { renderNav } from "./navbar/navbar";
 
 import { renderLanding } from "./landing/landing";
 import { renderAbout } from "./about/about";
 
-// import "./about/about";
+import "./about/about";
 const docFrag = new DocumentFragment();
 const body = document.createElement("div");
 body.setAttribute("id", "#root");
