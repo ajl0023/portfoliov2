@@ -4,8 +4,6 @@ import Prism from "prismjs";
 const element = document.createElement("section");
 element.classList.add(style["container"]);
 
-const newObserver = () => {};
-
 window.onload = () => {
   let options = {
     threshold: [0.2],

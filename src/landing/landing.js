@@ -1,16 +1,15 @@
 import style from "./landing.module.scss";
 import chatapp from "./projectphotos/chatapp.png";
 import covidTracker from "./projectphotos/covidTracker.png";
-import playlists from "./projectphotos/playlists.png";
-import portfolio from "./projectphotos/portfolio.png";
-import readdit from "./projectphotos/readdit.png";
-import tesla from "./projectphotos/tesla-clone.png";
 import CssIcon from "./projectphotos/css3.svg";
-import GitIcon from "./projectphotos/github.svg";
 import HtmlIcon from "./projectphotos/html5.svg";
 import JsIcon from "./projectphotos/javascript.svg";
 import NodeIcon from "./projectphotos/node.svg";
+import playlists from "./projectphotos/playlists.png";
+import portfolio from "./projectphotos/portfolio.png";
 import ReactIcon from "./projectphotos/react.svg";
+import readdit from "./projectphotos/readdit.png";
+import tesla from "./projectphotos/tesla-clone.png";
 
 const element = document.createElement("section");
 
@@ -83,7 +82,7 @@ export const renderLanding = (fragment) => {
           <img src=${tesla} class=${style["project-image"]} />
         </a>
         <a
-          href="https://github.com/ajl0023/portfolio"
+          href="https://github.com/ajl0023/portfoliov2"
           target="_blank"
           class=${style["project-container"]}
         >
