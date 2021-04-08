@@ -7,7 +7,6 @@ const puppeteer = require("puppeteer");
 app.listen(3000, function () {});
 
 app.use((req, res, next) => {
-  console.log(req.url, "123");
   res.append("Cache-Control", "123123123123");
 
   next();

@@ -73,7 +73,6 @@ module.exports = {
         type: "asset/inline",
         generator: {
           dataUrl: (content) => {
-            
             content = content.toString();
             return content;
           },
@@ -90,7 +89,7 @@ module.exports = {
     hot: true,
     inline: true,
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/test.html" })],
+  plugins: [new HtmlWebpackPlugin({ template: "./src/main.html" })],
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),

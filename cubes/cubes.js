@@ -376,3 +376,4 @@ const reduceMotion = matchMedia("(prefers-reduced-motion)").matches;
 
   "requestIdleCallback" in window ? requestIdleCallback(start) : start();
 }
+//code from https://codepen.io/tomatouiui/pen/mLmvov
