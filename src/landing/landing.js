@@ -6,7 +6,7 @@ import HtmlIcon from "./projectphotos/html5.svg";
 import JsIcon from "./projectphotos/javascript.svg";
 import NodeIcon from "./projectphotos/node.svg";
 import playlists from "./projectphotos/playlists.png";
-import portfolio from "./projectphotos/portfolio.png";
+import tftapp from "./projectphotos/tftapp.png";
 import ReactIcon from "./projectphotos/react.svg";
 import readdit from "./projectphotos/readdit.png";
 import tesla from "./projectphotos/tesla-clone.png";
@@ -82,12 +82,12 @@ export const renderLanding = (fragment) => {
           <img src=${tesla} class=${style["project-image"]} />
         </a>
         <a
-          href="https://github.com/ajl0023/portfoliov2"
+          href="https://github.com/ajl0023/tftapp2"
           target="_blank"
           class=${style["project-container"]}
         >
           <img
-            src=${portfolio}
+            src=${tftapp}
             class=${`${style["project-image"]} ${style["portfolio-image"]}`}
           />
         </a>

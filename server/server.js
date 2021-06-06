@@ -4,7 +4,7 @@ const path = require("path");
 
 const puppeteer = require("puppeteer");
 
-app.listen(3000, function () {});
+app.listen(process.env.PORT || 5000, function () {});
 
 app.use((req, res, next) => {
   res.append("Cache-Control", "123123123123");
@@ -19,7 +19,10 @@ async function ssr(url) {
     return RENDER_CACHE.get(url);
   }
 
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
   const page = await browser.newPage();
 
   await page.goto(url);
@@ -33,7 +36,7 @@ async function ssr(url) {
   return html;
 }
 
-app.use(express.static(path.join(__dirname, "../dist")));
+app.use(express.static(path.join(__dirname, "./public")));
 app.get("/", async (req, res) => {
   const test = await ssr(`${req.protocol}://${req.get("host")}/index.html`);
   res.send(test);
