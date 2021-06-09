@@ -11,8 +11,7 @@ export const renderNav = (docFrag) => {
   navContainer.innerHTML = /*html*/ `<div class=${style["container"]}>
     <div class=${style["contact-icon-container"]}>
    <a href="https://github.com/ajl0023" class=${style["contact-icon"]}> ${GHlogo}</a>
-   <a href="mailto:austinjlee.0@gmail.com
-" class=${style["contact-icon"]}> ${GMLogo}</a>
+   <a href="mailto:austinjlee.0@gmail.com" class=${style["contact-icon"]}> ${GMLogo}</a>
    <a href="https://github.com/ajl0023" class=${style["contact-icon"]}>${LIlogo}</a>
     <div class=${style["divider-line"]}></div>
     </div>
