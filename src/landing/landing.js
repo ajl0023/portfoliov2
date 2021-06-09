@@ -51,7 +51,7 @@ export const renderLanding = (fragment) => {
         <a class=${
           style["project-container"]
         } href="https://github.com/ajl0023/chatApp" >
-          <img src=${chatapp} class=${style["project-image"]} />
+         aaaaaasdasd
         </a>
     
   
