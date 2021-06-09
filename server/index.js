@@ -36,7 +36,7 @@ async function ssr(url) {
   return html;
 }
 
-app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.static(path.join(__dirname, "./client")));
 app.get("/", async (req, res) => {
   const test = await ssr(`${req.protocol}://${req.get("host")}/index.html`);
   res.send(test);

@@ -1,3 +1,3 @@
 git add . 
-git commit -m "edited links"
+git commit -m "added client"
 git push origin master
