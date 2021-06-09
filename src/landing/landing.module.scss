@@ -89,82 +89,74 @@
           font-weight: 700;
         }
       }
-      .image-container {
-        display: flex;
-        width: 100%;
-        @media (min-width: 950px) {
-          width: 66.66666667%;
-        }
-        flex-wrap: wrap;
-        gap: 6px;
-        .chat-project-container {
-          background-size: cover;
-        }
-        .project-container {
-          .project-link {
-            display: block;
-            height: 100%;
-            width: 100%;
-          }
-          @media (max-width: 540px) {
-            flex: 0 0 32.3%;
-          }
-          @media (max-width: 450px) {
-            flex: 0 0 31%;
-          }
-          .git-icon {
-            display: none;
-          }
-          // opacity: 0;
-          background-color: black;
-          cursor: pointer;
-          flex: 0 0 32.5%;
-          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-            0 12.5px 10px rgba(0, 0, 0, 0.06),
-            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-            0 100px 80px rgba(0, 0, 0, 0.12);
-          border-radius: 5px;
-          float: left;
-          overflow: hidden;
-          position: relative;
-          outline: none;
-          border: transparent;
-          &:hover {
-            background-color: rgba(0, 0, 0, 0.9);
-            .git-icon {
-              position: absolute;
-              fill: rgba(255, 255, 255, 0.4);
-              top: 0;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              margin: auto;
-              width: 55px;
-              height: 55px;
-              display: block;
-            }
-            .project-image {
-              opacity: 0.3;
-            }
-          }
-          .portfolio-image {
-            opacity: 0.5 !important;
-          }
-          .project-image {
-            display: block;
-            object-fit: cover;
-            opacity: 0.8;
-            width: 100%;
-            height: 100%;
-            background: white;
-          }
-        }
-      }
     }
   }
 }
+.image-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 6px;
+  @media (min-width: 950px) {
+    width: 66.66666667%;
+  }
+
+  .project-container {
+    @media (max-width: 540px) {
+      flex: 0 0 32.3%;
+    }
+    @media (max-width: 450px) {
+      flex: 0 0 31%;
+    }
+    .git-icon {
+      display: none;
+    }
+    // opacity: 0;
+    background-color: black;
+    cursor: pointer;
+    flex: 0 0 32.5%;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+    border: transparent;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      .git-icon {
+        position: absolute;
+        fill: rgba(255, 255, 255, 0.4);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 55px;
+        height: 55px;
+        display: block;
+      }
+      .project-image {
+        opacity: 0.3;
+      }
+    }
+    .portfolio-image {
+      opacity: 0.5 !important;
+    }
+    .project-image {
+      display: block;
+      object-fit: cover;
+      opacity: 0.8;
+      width: 100%;
+      height: 100%;
+      background: white;
+    }
+  }
+}
+
 .tech-wrapper {
   display: flex;
   justify-content: center;
