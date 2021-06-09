@@ -1,11 +1,3 @@
-.square-container {
-  position: fixed;
-  width: 500px;
-  height: 500px;
-  z-index: 1;
-
-}
-
 .cubes {
   z-index: 1;
 }
