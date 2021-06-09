@@ -47,7 +47,7 @@ export const renderLanding = (fragment) => {
     </div>
     <div class=${style["image-container"]}>
       <button class=${style["project-container"]}>
-        <a href="https://github.com/ajl0023/chatApp" target="_blank" >
+        <a href="https://github.com/ajl0023/chatApp" >
           <img src=${chatapp} class=${style["project-image"]} />
         </a>
       </button>
