@@ -124,6 +124,8 @@
           float: left;
           overflow: hidden;
           position: relative;
+          outline: none;
+          border: transparent;
           &:hover {
             background-color: rgba(0, 0, 0, 0.9);
             .git-icon {
