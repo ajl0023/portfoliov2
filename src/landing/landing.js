@@ -44,11 +44,7 @@ export const renderLanding = (fragment) => {
       <h4 class=${style["description"]}>
         Here are some of my projects I've been working on.
       </h4>
-    </div> <a class=${
-      style["project-container"]
-    } href="https://github.com/ajl0023/chatApp" >
-          <img src=${chatapp} class=${style["project-image"]} />
-        </a>
+    </div> 
     <div class=${style["image-container"]}>
  
       
