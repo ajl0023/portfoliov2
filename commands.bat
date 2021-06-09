@@ -1,3 +1,3 @@
 git add . 
-git commit -m "added additional project"
+git commit -m "edited readme"
 git push origin master
