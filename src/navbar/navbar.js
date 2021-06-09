@@ -10,9 +10,9 @@ export const renderNav = (docFrag) => {
 
   navContainer.innerHTML = /*html*/ `<div class=${style["container"]}>
     <div class=${style["contact-icon-container"]}>
-    ${GHlogo}
-    ${GMLogo}
-   ${LIlogo}
+   <li class=${style["contact-icon"]}> ${GHlogo}</li>
+   <li class=${style["contact-icon"]}> ${GMLogo}</li>
+   <li class=${style["contact-icon"]}>${LIlogo}</li>
     <div class=${style["divider-line"]}></div>
     </div>
     </div>`;

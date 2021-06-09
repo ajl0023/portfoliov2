@@ -1,3 +1,3 @@
 git add . 
-git commit -m "added client"
+git commit -m "fixed navbar"
 git push origin master
