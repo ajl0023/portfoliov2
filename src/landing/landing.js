@@ -75,7 +75,7 @@ export const renderLanding = (fragment) => {
           <img src=${playlists} class=${style["project-image"]} />
         </a>
         <a
-          href="https://github.com/ajl0023/tesla-clone"
+          href="https://github.com/ajl0023/teslaClone"
           target="_blank"
           class=${style["project-container"]}
         >
