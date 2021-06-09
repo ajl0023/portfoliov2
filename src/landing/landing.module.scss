@@ -101,6 +101,11 @@
           background-size: cover;
         }
         .project-container {
+          .project-link {
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
           @media (max-width: 540px) {
             flex: 0 0 32.3%;
           }
