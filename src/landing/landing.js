@@ -47,7 +47,7 @@ export const renderLanding = (fragment) => {
       </div>
       <div class=${style["image-container"]}>
         <a
-          ref="https://github.com/ajl0023/chatApp"
+          href="https://github.com/ajl0023/chatApp"
           target="_blank"
           class=${style["project-container"]}
         >
@@ -61,7 +61,7 @@ export const renderLanding = (fragment) => {
           <img src=${covidTracker} class=${style["project-image"]} />
         </a>
         <a
-          href="https://github.com/ajl0023/readit"
+          href="https://github.com/ajl0023/readditv2"
           target="_blank"
           class=${style["project-container"]}
         >
