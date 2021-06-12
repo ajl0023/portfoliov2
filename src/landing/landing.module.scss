@@ -199,8 +199,13 @@
       .icon-label {
         text-align: center;
         z-index: 5;
+
         color: white;
+
         white-space: nowrap;
+        @media (max-width: 490px) {
+          font-size: 0.5rem;
+        }
       }
       .tech-icon {
         fill: rgba(255, 255, 255, 0.7);

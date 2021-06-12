@@ -4,6 +4,7 @@ import covidTracker from "./projectphotos/covidTracker.png";
 import CssIcon from "./projectphotos/css3.svg";
 import HtmlIcon from "./projectphotos/html5.svg";
 import JsIcon from "./projectphotos/javascript.svg";
+import sqlIcon from "./projectphotos/mysql.svg";
 import NodeIcon from "./projectphotos/node.svg";
 import playlists from "./projectphotos/playlists.png";
 import tftapp from "./projectphotos/tftapp.png";
@@ -31,6 +32,10 @@ const techImages = [
   {
     image: CssIcon,
     name: "Css",
+  },
+  {
+    image: sqlIcon,
+    name: "MySQL",
   },
 ];
 

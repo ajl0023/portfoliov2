@@ -6,6 +6,7 @@
   "scripts": {
     "deploy": "gh-pages -d build",
     "build": "webpack",
+    "watch": "webpack --watch",
     "server": "nodemon ./server/server.js",
     "start": "nodemon ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
