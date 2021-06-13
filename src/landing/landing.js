@@ -117,7 +117,8 @@ export const renderLanding = (fragment) => {
   techImages.map((item) => {
     let icon = document.createElement("div");
     icon.classList.add(style["icon-container"]);
-    icon.innerHTML = /*html*/ `${item.image} <p class=${style["icon-label"]}>${item.name}</p>`;
+    icon.innerHTML = /*html*/ `
+    ${item.image} <p class=${style["icon-label"]}>${item.name}</p>`;
     techContainer.appendChild(icon);
   });
 };
