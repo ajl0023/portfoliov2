@@ -70,7 +70,7 @@ export const renderLanding = (fragment) => {
         </a>
       </button>
       <button class=${style["project-container"]}>
-        <a href="https://github.com/ajl0023/readditv2" target="_blank" class=${
+        <a href="https://github.com/ajl0023/redditSqlMaster" target="_blank" class=${
           style["project-container"]
         }>
           <img src=${readdit} class=${style["project-image"]} />
