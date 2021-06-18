@@ -1,3 +1,3 @@
 git add . 
-git commit -m "fixing issues on mobile"
+git commit -m "changed readdit to sql implementation"
 git push origin master

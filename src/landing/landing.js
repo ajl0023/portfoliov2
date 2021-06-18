@@ -77,7 +77,7 @@ export const renderLanding = (fragment) => {
         </a>
       </button>
       <button class=${style["project-container"]}>
-        <a href="https://github.com/ajl0023/spotifyPlaylists" target="_blank" class=${
+        <a href="https://github.com/ajl0023/betterPlaylist" target="_blank" class=${
           style["project-container"]
         }>
           <img src=${playlists} class=${style["project-image"]} />
