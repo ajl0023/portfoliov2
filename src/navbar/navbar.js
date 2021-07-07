@@ -17,12 +17,14 @@ export const renderNav = (docFrag) => {
       <a href="mailto:austinjlee.0@gmail.com" class=${style["contact-icon"]}>
         ${GMLogo}</a
       >
-      <a href="https://github.com/ajl0023" class=${style["contact-icon"]}
+      <a
+        href="https://www.linkedin.com/in/austin-lee-91a341215/"
+        class=${style["contact-icon"]}
         >${LIlogo}</a
       >
       <a
-        href="./resume.docx"
-        download="resume.docx"
+        href="./Resume.docx"
+        download="Resume.docx"
         class=${style["contact-icon"]}
         >${Relogo}</a
       >
