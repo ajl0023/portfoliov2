@@ -23,8 +23,8 @@ export const renderNav = (docFrag) => {
         >${LIlogo}</a
       >
       <a
-        href="./Resume.docx"
-        download="Resume.docx"
+        href="./Resume.pdf"
+        download="Resume.pdf"
         class=${style["contact-icon"]}
         >${Relogo}</a
       >
