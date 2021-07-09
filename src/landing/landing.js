@@ -46,6 +46,7 @@ export const renderLanding = (fragment) => {
   <div class=${style["container"]}>
     <div class=${style["text-container"]}>
       <h1 class=${style["main-title"]}>Hi, I'm <span>Austin</span></h1>
+      <div>test</div>
       <h4 class=${style["description"]}>
         Here are some of my projects I've been working on.
       </h4>
