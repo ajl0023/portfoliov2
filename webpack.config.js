@@ -65,7 +65,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif|pdf)$/i,
         type: "asset/resource",
       },
       {
@@ -91,6 +91,7 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/main.html" })],
   output: {
+    clean: true,
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
   },

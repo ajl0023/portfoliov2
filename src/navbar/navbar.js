@@ -3,7 +3,7 @@ import LIlogo from "./navlogos/linkedin.svg";
 import GHlogo from "./navlogos/github.svg";
 import GMLogo from "./navlogos/gmail.svg";
 import Relogo from "./navlogos/resume.svg";
-
+import "./AustinLeeResume.pdf";
 export const renderNav = (docFrag) => {
   const root = docFrag.getElementById("#root");
 

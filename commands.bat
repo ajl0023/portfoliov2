@@ -1,3 +1,3 @@
 git add . 
-git commit -m "changed readdit to sql implementation"
-git push origin master
+git commit -m "added multiple pages for projects"
+git push --f origin master
